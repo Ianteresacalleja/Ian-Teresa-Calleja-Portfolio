@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/sgy2yyq.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1n8aAzFZjZ3qg9tNV8B+zh6nwKg4bxprC/sir4LQWD6ttvTkK0vkpD7z8pugsfpd8u2lybY+7HcV44lLAcHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">[ design ]</a></li>
+                    <li><a href="photo.html">[ photography ]</a></li>
+                    <li><a href="#about-section">[ about ]</a></li>
+                    <li><a href="resume.html">[ resume ]</a></li>
+                    <li><a href="#" id="contact-trigger">[ contact ]</a></li>
+                    <li>
+                        <a class="btn btn-light" href="#" aria-label="Profile">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <ul>
+            <li>ian teresa-calleja ©2026</li>
+        </ul>
+    </div>
+
+    <main class="photo-page">
+        <div class="photo-hero container">
+            <p class="photo-kicker">Archive</p>
+            <h1>Photography</h1>
+        </div>
+
+        <section class="photo-controls container" aria-label="Photography filters">
+            <button class="photo-filter is-active" type="button" data-filter="all">All</button>
+            <button class="photo-filter" type="button" data-filter="analog">Analog</button>
+            <button class="photo-filter" type="button" data-filter="digital">Digital</button>
+            <button class="photo-filter" type="button" data-filter="bw">B/W</button>
+            <button class="photo-filter" type="button" data-filter="color">Color</button>
+            <button class="photo-filter" type="button" data-filter="architecture">Architecture</button>
+            <button class="photo-filter" type="button" data-filter="msc">MSC</button>
+            <button class="photo-filter" type="button" data-filter="photograms">Photograms</button>
+            <button class="photo-filter" type="button" data-filter="car">Car</button>
+            <button class="photo-filter" type="button" data-filter="garden">Garden</button>
+            <button class="photo-filter" type="button" data-filter="park">Park</button>
+        </section>
+
+        <section class="photo-gallery-wrap container" aria-label="Photography gallery">
+            <div id="photo-gallery-grid" class="photo-gallery-grid"></div>
+        </section>
+    </main>
+
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-wrap" aria-label="Space reserved for profile image">
+                    <img src="images/headshot-ian.jpg" alt="Headshot of Ian Teresa-Calleja" class="about-image">
+                </div>
+
+                <div class="about-text">
+                    <h2>About</h2>
+                    <p>
+                        Ian Teresa-Calleja is a Cuban-American experimental Type-Based designer,
+                        who strives to push the boundary for typography as communication.
+                    </p>
+                    <p>
+                        Teresa-Calleja explores photography, collage, and illustration, fusing
+                        analog and digital mediums to produce designs that live in the margins and
+                        push people to think differently.
+                    </p>
+                    <div class="about-links" aria-label="Social links">
+                        <a href="https://www.instagram.com/ian_teresa_calleja/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.linkedin.com/in/ian-teresa-calleja-79a468358" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+
+                    <div class="business-card-wrap">
+                        <p class="business-card-label">Business Card (click to flip)</p>
+                        <button type="button" class="business-card" aria-label="Flip business card">
+                            <span class="business-card-inner">
+                                <span class="business-card-face business-card-front">
+                                    <img src="images/business card/ian-businesscard-front.png" alt="Ian business card front" class="business-card-image">
+                                </span>
+                                <span class="business-card-face business-card-back">
+                                    <img src="images/business card/ian-businesscard-back.png" alt="Ian business card back" class="business-card-image">
+                                </span>
+                            </span>
+                        </button>
+                        <button
+                            type="button"
+                            id="business-card-download"
+                            class="business-card-download"
+                            data-front="images/business card/ian-businesscard-front.png"
+                            data-back="images/business card/ian-businesscard-back.png"
+                        >
+                            Download Card
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contact-modal" class="contact-modal">
+        <div class="contact-modal-content">
+            <h2>Get In Touch<span class="contact-modal-close">&times;</span></h2>
+            <form id="contact-form" action="https://formspree.io/f/mgonovqe" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 4 | Portfolio</title>
+	<link rel="preconnect" href="https://use.typekit.net">
+	<link rel="stylesheet" href="https://use.typekit.net/sgy2yyq.css">
+	<link rel="stylesheet" href="CSS/style.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/png"></head>
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+			</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="index.html">[ design ]</a></li>
+					<li><a href="photo.html">[ photography ]</a></li>
+					<li><a href="index.html#about-section">[ about ]</a></li>
+					<li><a href="resume.html">[ resume ]</a></li>
+					<li><a href="#" id="contact-trigger">[ contact ]</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="sidebar">
+		<ul><li>ian teresa-calleja @2026</li></ul>
+	</div>
+
+	<main class="project-page container">
+		<section class="project-gallery" aria-label="Project 4 gallery">
+			<div class="project-main-frame">
+				<img class="project-main-image" src="images/Type exploration/ah/hoffman-1.jpg" alt="Typographic Exploration featured image">
+			</div>
+			<div class="project-gallery-right">
+				<h1 class="project-page-title">typographic exploration</h1><p class="project-page-description">A series of typographic explorations engaging the International Style, investigating type as both shape and form through structure, rhythm, and composition.</p>
+				<div class="project-thumbs" role="list">
+					<button type="button" class="project-thumb is-active" data-full="images/Type exploration/ah/hoffman-1.jpg"><img src="images/Type exploration/ah/hoffman-1.jpg" alt="AH thumbnail 1"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/ah/hoffman-2.JPG"><img src="images/Type exploration/ah/hoffman-2.JPG" alt="AH thumbnail 2"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/ah/Hoffman-3.JPG"><img src="images/Type exploration/ah/Hoffman-3.JPG" alt="AH thumbnail 3"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/ah copy/abstract type 1.JPG"><img src="images/Type exploration/ah copy/abstract type 1.JPG" alt="AH copy thumbnail 1"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/ah copy/abstract type 2.JPG"><img src="images/Type exploration/ah copy/abstract type 2.JPG" alt="AH copy thumbnail 2"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/ah copy/Abstract type 3.JPG"><img src="images/Type exploration/ah copy/Abstract type 3.JPG" alt="AH copy thumbnail 3"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id cover.PNG"><img src="images/Type exploration/id book/id cover.PNG" alt="ID book thumbnail 1"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id res.PNG"><img src="images/Type exploration/id book/id res.PNG" alt="ID book thumbnail 2"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id impulsive.PNG"><img src="images/Type exploration/id book/id impulsive.PNG" alt="ID book thumbnail 3"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id neurotic.jpg"><img src="images/Type exploration/id book/id neurotic.jpg" alt="ID book thumbnail 4"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id reclusive.jpg"><img src="images/Type exploration/id book/id reclusive.jpg" alt="ID book thumbnail 5"></button>
+					<button type="button" class="project-thumb" data-full="images/Type exploration/id book/id back.jpg"><img src="images/Type exploration/id book/id back.jpg" alt="ID book thumbnail 6"></button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Contact Modal -->
+	<div id="contact-modal" class="contact-modal">
+		<div class="contact-modal-content">
+			<h2>Get In Touch<span class="contact-modal-close">&times;</span></h2>
+			<form id="contact-form" action="https://formspree.io/f/mgonovqe" method="POST">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="submit-btn">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
